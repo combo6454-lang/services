@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  --main-color: #a279ec; 
+  --accent-color: #9be7c4; 
+  --text-color: #444;
+  --bg-color: #fafafa;
+  --card-bg: #fff;
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+
+header {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  box-shadow: var(--shadow);
+}
+
+header h1 {
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+
+.service-card {
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.service-card h2 {
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #666;
+}
+
+.add-btn {
+  background-color: var(--accent-color);
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+  margin-top: 15px;
+}
+
+.add-btn:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+
+form {
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 25px;
+  width: 90%;
+  max-width: 500px;
+  margin-top: 25px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: border-color 0.2s ease;
+  margin-bottom: 15px;
+}
+
+form input:focus, form textarea:focus {
+  border-color: var(--main-color);
+}
+
+form button {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--accent-color);
+  color: #333;
+}
+
+
+.empty {
+  color: #aaa;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+}
